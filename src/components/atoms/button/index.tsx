@@ -1,7 +1,7 @@
 import { children, JSX, splitProps } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
-type ButtonProps = JSX.AnchorHTMLAttributes<HTMLAnchorElement> &
+export type ButtonProps = JSX.AnchorHTMLAttributes<HTMLAnchorElement> &
   JSX.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export default function Button(props: ButtonProps) {

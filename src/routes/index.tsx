@@ -6,7 +6,9 @@ import HomeHeroSection from "~/components/organisms/home-hero-section";
 export default function Home() {
   return (
     <MainLayout>
-      <HomeHeroSection />
+      <div class="pt-6">
+        <HomeHeroSection />
+      </div>
     </MainLayout>
   );
 }

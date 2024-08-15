@@ -1,5 +1,5 @@
-import Button from "~/components/atoms/button";
 import PrimaryButton from "~/components/atoms/primary-button";
+import SecondaryButton from "~/components/atoms/secondary-button";
 import HeroSection from "~/components/molecules/hero-section";
 
 export default function HomeHeroSection() {
@@ -11,12 +11,16 @@ export default function HomeHeroSection() {
         </h2>
       </HeroSection.Header>
       <HeroSection.Content>
-        <h3>with Online Design and Development Courses.</h3>
-        <p>Learn from Industry Experts and Enhance Your Skills.</p>
+        <h3 class="font-medium text-2xl">
+          with Online Design and Development Courses.
+        </h3>
+        <p class="text-sm">
+          Learn from Industry Experts and Enhance Your Skills.
+        </p>
       </HeroSection.Content>
       <HeroSection.Ctas>
         <PrimaryButton href="#">Explore Courses</PrimaryButton>
-        <Button href="#">View Pricing</Button>
+        <SecondaryButton href="#">View Pricing</SecondaryButton>
       </HeroSection.Ctas>
     </HeroSection>
   );

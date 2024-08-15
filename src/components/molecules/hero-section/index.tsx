@@ -6,7 +6,7 @@ import HeroSectionHeader from "./header";
 function HeroSection(props: ParentProps) {
   const safeChildren = children(() => props.children);
 
-  return <div>{safeChildren()}</div>;
+  return <div class="flex flex-col items-center gap-5">{safeChildren()}</div>;
 }
 
 HeroSection.Header = HeroSectionHeader;

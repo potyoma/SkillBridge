@@ -1,14 +1,14 @@
-import { JSX, splitProps, children } from "solid-js";
-import { twMerge } from "tailwind-merge";
+import { children, splitProps } from "solid-js";
 import Button, { ButtonProps } from "../button";
+import { twMerge } from "tailwind-merge";
 
-export default function PrimaryButton(props: ButtonProps) {
+export default function SecondaryButton(props: ButtonProps) {
   const safeChildren = children(() => props.children);
   const [localProps, restProps] = splitProps(props, ["class"]);
 
   return (
     <Button
-      class={twMerge("bg-orange-50 text-white py-3", localProps.class)}
+      class={twMerge("bg-white text-gray-15 py-2.5 border-white-95", localProps.class)}
       {...restProps}
     >
       {safeChildren()}
