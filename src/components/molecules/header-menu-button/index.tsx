@@ -3,8 +3,8 @@ import Button from "~/components/atoms/button";
 
 export default function HeaderMenuButton() {
   return (
-    <Button>
-      <BarsBottomIcon />
+    <Button class="p-0">
+      <BarsBottomIcon class="h-9 w-9" />
     </Button>
   );
 }
