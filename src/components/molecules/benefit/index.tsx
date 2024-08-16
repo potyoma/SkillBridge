@@ -2,6 +2,7 @@ import { BenefitModel } from "~/lib/types/benefits";
 import { formatCounter } from "./utils";
 import Button from "~/components/atoms/button";
 import ArrowUpRightIcon from "~/assets/icons/arrow-up-right";
+import Card from "~/components/atoms/card";
 
 type BenefitProps = {
   benefit: BenefitModel;
@@ -12,7 +13,7 @@ export default function Benefit(props: BenefitProps) {
   const benefit = props.benefit;
 
   return (
-    <div class="flex flex-col items-end gap-8 p-8 bg-white border border-white-95 rounded-lg">
+    <Card class="flex flex-col items-end gap-8 py-7 px-8">
       <span class="text-5xl font-bold">{formatCounter(props.counter)}</span>
       <div class="self-start flex flex-col gap-2">
         <h3 class="font-semibold text-xl">{benefit.heading}</h3>
@@ -24,6 +25,6 @@ export default function Benefit(props: BenefitProps) {
       >
         <ArrowUpRightIcon class="h-7 w-7 text-orange-50" />
       </Button>
-    </div>
+    </Card>
   );
 }
