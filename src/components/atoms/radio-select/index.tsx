@@ -44,7 +44,7 @@ export default function RadioSelect(props: RadioSelectProps) {
               />
               <label
                 for={id}
-                class="py-3 px-6 rounded-lg transition-colors duration-300 ease-out text-gray-30 peer-checked:bg-orange-50 peer-checked:text-white"
+                class="py-3 px-6 rounded-lg transition-colors duration-300 ease-out peer-checked:bg-orange-50 peer-checked:text-white"
               >
                 {option.label}
               </label>

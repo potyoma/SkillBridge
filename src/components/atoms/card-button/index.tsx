@@ -8,10 +8,7 @@ export default function CardButton(props: ButtonProps) {
   return (
     <Button
       {...props}
-      class={twMerge(
-        "border border-white-95 py-3.5 bg-white-97 text-gray-15",
-        props.class
-      )}
+      class={twMerge("border border-white-95 py-3.5 bg-white-97", props.class)}
     >
       {safeChildren()}
     </Button>
