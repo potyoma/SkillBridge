@@ -12,7 +12,7 @@ export default function Button(props: ButtonProps) {
   const isAnchor = !!props.href;
 
   const className = twMerge(
-    "flex items-center justify-center px-6 py-2 rounded-md",
+    "flex items-center justify-center px-6 py-2 rounded-md text-sm",
     localProps.class
   );
 

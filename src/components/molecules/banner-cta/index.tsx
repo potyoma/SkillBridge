@@ -10,7 +10,7 @@ export default function BannerCta(props: BannerCtaProps) {
   const safeChildren = children(() => props.children);
 
   return (
-    <PrimaryButton href={props.href} class="flex gap-3 px-2">
+    <PrimaryButton href={props.href} class="flex gap-3 px-2 text-sm">
       {safeChildren()}
       <ArrowLongRight class="w-5 h-5" />
     </PrimaryButton>
