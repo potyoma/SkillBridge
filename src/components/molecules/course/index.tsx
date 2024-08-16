@@ -1,6 +1,6 @@
 import Badge from "~/components/atoms/badge";
 import Card from "~/components/atoms/card";
-import SecondaryButton from "~/components/atoms/secondary-button";
+import CardButton from "~/components/atoms/card-button";
 import { CourseModel } from "~/lib/types/courses";
 
 type CourseProps = {
@@ -26,12 +26,7 @@ export default function Course(props: CourseProps) {
           <p class="text-sm">{course.description}</p>
         </div>
       </div>
-      <SecondaryButton
-        class="border border-white-95 bg-white-97 text-black"
-        href={course.slug}
-      >
-        Get it Now
-      </SecondaryButton>
+      <CardButton href={course.slug}>Get it Now</CardButton>
     </Card>
   );
 }

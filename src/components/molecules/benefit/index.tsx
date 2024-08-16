@@ -3,6 +3,7 @@ import { formatCounter } from "./utils";
 import Button from "~/components/atoms/button";
 import ArrowUpRightIcon from "~/assets/icons/arrow-up-right";
 import Card from "~/components/atoms/card";
+import CardButton from "~/components/atoms/card-button";
 
 type BenefitProps = {
   benefit: BenefitModel;
@@ -19,12 +20,9 @@ export default function Benefit(props: BenefitProps) {
         <h3 class="font-semibold text-xl">{benefit.heading}</h3>
         <p class="text-sm">{benefit.description}</p>
       </div>
-      <Button
-        href={benefit.slug}
-        class="bg-white-97 border p-2 border-white-95"
-      >
+      <CardButton href={benefit.slug} class="p-2">
         <ArrowUpRightIcon class="h-7 w-7 text-orange-50" />
-      </Button>
+      </CardButton>
     </Card>
   );
 }

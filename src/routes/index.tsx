@@ -2,6 +2,7 @@ import MainLayout from "~/components/layouts/main-layout";
 import Benefits from "~/components/organisms/benefits";
 import Courses from "~/components/organisms/courses";
 import HomeHeroSection from "~/components/organisms/home-hero-section";
+import Testimonials from "~/components/organisms/testimonials";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <HomeHeroSection />
         <Benefits />
         <Courses />
+        <Testimonials />
       </div>
     </MainLayout>
   );
