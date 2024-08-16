@@ -16,7 +16,7 @@ export default function Testimonial(props: TestimonialProps) {
       <p class="p-7 text-sm">{testimonial.text}</p>
       <div class="px-7 py-5 flex justify-between items-center border-t border-t-white-95">
         <div class="flex gap-2 items-center">
-          <img src={author.avatar} />
+          <img src={author.avatar} alt={author.avatarAlt} />
           <h3 class="font-semibold">{formatName(author)}</h3>
         </div>
         <CardButton href={testimonial.link}>Read Full Story</CardButton>
