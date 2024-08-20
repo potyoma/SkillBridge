@@ -1,4 +1,4 @@
-import { children, JSX, splitProps } from "solid-js";
+import { JSX, splitProps } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
 export type ButtonProps = JSX.AnchorHTMLAttributes<HTMLAnchorElement> &
@@ -6,8 +6,6 @@ export type ButtonProps = JSX.AnchorHTMLAttributes<HTMLAnchorElement> &
 
 export default function Button(props: ButtonProps) {
   const [localProps, restProps] = splitProps(props, ["class"]);
-
-  const safeChildren = children(() => props.children);
 
   const isAnchor = !!props.href;
 
@@ -18,11 +16,11 @@ export default function Button(props: ButtonProps) {
 
   return isAnchor ? (
     <a class={className} {...restProps}>
-      {safeChildren()}
+      {props.children}
     </a>
   ) : (
     <button class={className} {...restProps}>
-      {safeChildren()}
+      {props.children}
     </button>
   );
 }

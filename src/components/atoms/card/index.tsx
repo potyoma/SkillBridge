@@ -1,4 +1,4 @@
-import { children, ParentProps } from "solid-js";
+import { ParentProps } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
 type CardProps = ParentProps & {
@@ -6,8 +6,6 @@ type CardProps = ParentProps & {
 };
 
 export default function Card(props: CardProps) {
-  const safeChildren = children(() => props.children);
-
   return (
     <div
       class={twMerge(
@@ -15,7 +13,7 @@ export default function Card(props: CardProps) {
         props.class
       )}
     >
-      {safeChildren()}
+      {props.children}
     </div>
   );
 }
