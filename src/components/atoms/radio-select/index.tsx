@@ -1,4 +1,3 @@
-import { createAutoAnimate } from "@formkit/auto-animate/solid";
 import { createUniqueId, For, JSX } from "solid-js";
 
 export type RadioSelectOption = {
@@ -14,19 +13,12 @@ type RadioSelectProps = {
 };
 
 export default function RadioSelect(props: RadioSelectProps) {
-  const [parent] = createAutoAnimate({});
-
   const handleChange = (option: RadioSelectOption) => {
     props.onSelect?.(option);
   };
 
-  console.log(props.selected);
-
   return (
-    <fieldset
-      class="flex p-6 border border-white-95 rounded-lg bg-white"
-      ref={parent}
-    >
+    <fieldset class="flex p-6 border border-white-95 rounded-lg bg-white">
       <For each={props.options}>
         {option => {
           const id = createUniqueId();
