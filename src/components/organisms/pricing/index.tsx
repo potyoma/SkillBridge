@@ -3,16 +3,16 @@ import RadioSelect, {
   RadioSelectOption,
 } from "~/components/atoms/radio-select";
 import Section from "~/components/molecules/section";
+import { Regularity, RegularityType } from "~/lib/types/price-plan";
+import PricePlans from "../price-plans";
 
 const options: RadioSelectOption[] = [
-  { value: "monthly", label: "Monthly" },
-  { value: "yearly", label: "Yearly" },
+  { value: RegularityType.monthly, label: "Monthly" },
+  { value: RegularityType.yearly, label: "Yearly" },
 ];
 
 export default function Pricing() {
   const [option, setOption] = createSignal(options[0]);
-
-  console.log(option());
 
   return (
     <Section
@@ -26,6 +26,8 @@ export default function Pricing() {
           name="pricing-type"
         />
       }
-    ></Section>
+    >
+      <PricePlans regularity={option().value as Regularity} />
+    </Section>
   );
 }
