@@ -1,14 +1,14 @@
-import Badge from "~/components/atoms/badge";
-import Card from "~/components/atoms/card";
-import CardButton from "~/components/atoms/card-button";
-import { CourseModel } from "~/lib/types/courses";
+import Badge from '~/components/atoms/badge'
+import Card from '~/components/atoms/card'
+import CardButton from '~/components/atoms/card-button'
+import { CourseModel } from '~/lib/types/courses'
 
 type CourseProps = {
-  course: CourseModel;
-};
+  course: CourseModel
+}
 
 export default function Course(props: CourseProps) {
-  const course = () => props.course;
+  const course = () => props.course
 
   return (
     <Card class="flex flex-col gap-3">
@@ -22,11 +22,11 @@ export default function Course(props: CourseProps) {
           <h4 class="font-medium">By {course().author}</h4>
         </div>
         <div class="flex flex-col gap-2.5">
-          <h2 class="font-semibold text-lg">{course().name}</h2>
+          <h2 class="text-lg font-semibold">{course().name}</h2>
           <p class="text-sm">{course().description}</p>
         </div>
       </div>
       <CardButton href={course().slug}>Get it Now</CardButton>
     </Card>
-  );
+  )
 }

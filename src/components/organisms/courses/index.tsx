@@ -1,7 +1,7 @@
-import { For } from "solid-js";
-import Course from "~/components/molecules/course";
-import Section from "~/components/molecules/section";
-import { courses } from "./consts";
+import { For } from 'solid-js'
+import Course from '~/components/molecules/course'
+import Section from '~/components/molecules/section'
+import { courses } from './consts'
 
 export default function Courses() {
   return (
@@ -11,8 +11,8 @@ export default function Courses() {
       href="#"
     >
       <ul class="flex flex-col gap-2.5">
-        <For each={courses}>{course => <Course course={course} />}</For>
+        <For each={courses}>{(course) => <Course course={course} />}</For>
       </ul>
     </Section>
-  );
+  )
 }

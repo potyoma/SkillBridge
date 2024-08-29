@@ -1,8 +1,8 @@
-import SecondaryButton from "~/components/atoms/secondary-button";
-import Section from "~/components/molecules/section";
-import { benefits } from "./consts";
-import { For } from "solid-js";
-import Benefit from "~/components/molecules/benefit";
+import SecondaryButton from '~/components/atoms/secondary-button'
+import Section from '~/components/molecules/section'
+import { benefits } from './consts'
+import { For } from 'solid-js'
+import Benefit from '~/components/molecules/benefit'
 
 export default function Benefits() {
   return (
@@ -23,5 +23,5 @@ export default function Benefits() {
         </For>
       </ul>
     </Section>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import PrimaryButton from "~/components/atoms/primary-button";
-import SecondaryButton from "~/components/atoms/secondary-button";
-import HeroSection from "~/components/molecules/hero-section";
-import Clients from "../../molecules/clients";
-import HeroVideo from "../../molecules/hero-video";
+import PrimaryButton from '~/components/atoms/primary-button'
+import SecondaryButton from '~/components/atoms/secondary-button'
+import HeroSection from '~/components/molecules/hero-section'
+import Clients from '../../molecules/clients'
+import HeroVideo from '../../molecules/hero-video'
 
 export default function HomeHeroSection() {
   return (
@@ -14,7 +14,7 @@ export default function HomeHeroSection() {
           </h2>
         </HeroSection.Header>
         <HeroSection.Content>
-          <h3 class="font-medium text-2xl">
+          <h3 class="text-2xl font-medium">
             with Online Design and Development Courses.
           </h3>
           <p class="text-sm">
@@ -27,7 +27,7 @@ export default function HomeHeroSection() {
         </HeroSection.Ctas>
       </HeroSection>
       <Clients />
-      <HeroVideo class="w-full max-h-60" />
+      <HeroVideo class="max-h-60 w-full" />
     </div>
-  );
+  )
 }

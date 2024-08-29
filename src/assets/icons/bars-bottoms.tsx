@@ -1,7 +1,7 @@
-import { JSX } from "solid-js";
+import { JSX } from 'solid-js'
 
 export default function BarsBottomIcon(
-  props: JSX.SvgSVGAttributes<SVGSVGElement>
+  props: JSX.SvgSVGAttributes<SVGSVGElement>,
 ) {
   return (
     <svg
@@ -19,5 +19,5 @@ export default function BarsBottomIcon(
         d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
       />
     </svg>
-  );
+  )
 }

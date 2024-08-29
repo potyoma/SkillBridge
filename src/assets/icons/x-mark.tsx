@@ -1,4 +1,4 @@
-import { JSX } from "solid-js";
+import { JSX } from 'solid-js'
 
 export default function XMarkIcon(props: JSX.SvgSVGAttributes<SVGSVGElement>) {
   return (
@@ -16,5 +16,5 @@ export default function XMarkIcon(props: JSX.SvgSVGAttributes<SVGSVGElement>) {
         d="M6 18 18 6M6 6l12 12"
       />
     </svg>
-  );
+  )
 }

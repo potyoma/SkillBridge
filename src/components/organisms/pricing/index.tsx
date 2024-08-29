@@ -1,18 +1,16 @@
-import { createSignal } from "solid-js";
-import RadioSelect, {
-  RadioSelectOption,
-} from "~/components/atoms/radio-select";
-import Section from "~/components/molecules/section";
-import { Regularity, RegularityType } from "~/lib/types/price-plan";
-import PricePlans from "../price-plans";
+import { createSignal } from 'solid-js'
+import RadioSelect, { RadioSelectOption } from '~/components/atoms/radio-select'
+import Section from '~/components/molecules/section'
+import { Regularity, RegularityType } from '~/lib/types/price-plan'
+import PricePlans from '../price-plans'
 
 const options: RadioSelectOption[] = [
-  { value: RegularityType.monthly, label: "Monthly" },
-  { value: RegularityType.yearly, label: "Yearly" },
-];
+  { value: RegularityType.monthly, label: 'Monthly' },
+  { value: RegularityType.yearly, label: 'Yearly' },
+]
 
 export default function Pricing() {
-  const [option, setOption] = createSignal(options[0]);
+  const [option, setOption] = createSignal(options[0])
 
   return (
     <Section
@@ -29,5 +27,5 @@ export default function Pricing() {
     >
       <PricePlans regularity={option().value as Regularity} />
     </Section>
-  );
+  )
 }

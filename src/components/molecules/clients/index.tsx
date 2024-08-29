@@ -1,12 +1,12 @@
-import { For } from "solid-js";
-import { clients } from "./consts";
+import { For } from 'solid-js'
+import { clients } from './consts'
 
 export default function Clients() {
   return (
-    <ul class="bg-white border-white-95 rounded-md p-3 flex w-full overflow-x-auto">
+    <ul class="flex w-full overflow-x-auto rounded-md border-white-95 bg-white p-3">
       <For each={clients}>
-        {client => (
-          <li class="p-3 px-7 border-r border-r-white-95 last:border-r-0">
+        {(client) => (
+          <li class="border-r border-r-white-95 p-3 px-7 last:border-r-0">
             <img
               class="min-h-10 min-w-16"
               src={`/images/clients/${client}.svg`}
@@ -16,5 +16,5 @@ export default function Clients() {
         )}
       </For>
     </ul>
-  );
+  )
 }

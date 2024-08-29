@@ -1,9 +1,9 @@
 export const clients = [
-  "zapier",
-  "spotify",
-  "zoom",
-  "amazon",
-  "adobe",
-  "notion",
-  "netflix",
-];
+  'zapier',
+  'spotify',
+  'zoom',
+  'amazon',
+  'adobe',
+  'notion',
+  'netflix',
+]

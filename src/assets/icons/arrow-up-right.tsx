@@ -1,7 +1,7 @@
-import { JSX } from "solid-js";
+import { JSX } from 'solid-js'
 
 export default function ArrowUpRightIcon(
-  props: JSX.SvgSVGAttributes<SVGSVGElement>
+  props: JSX.SvgSVGAttributes<SVGSVGElement>,
 ) {
   return (
     <svg
@@ -16,5 +16,5 @@ export default function ArrowUpRightIcon(
         clip-rule="evenodd"
       />
     </svg>
-  );
+  )
 }

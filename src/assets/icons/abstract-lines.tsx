@@ -1,7 +1,7 @@
-import { JSX } from "solid-js";
+import { JSX } from 'solid-js'
 
 export default function AbstractLines(
-  props: JSX.SvgSVGAttributes<SVGSVGElement>
+  props: JSX.SvgSVGAttributes<SVGSVGElement>,
 ) {
   return (
     <svg
@@ -31,5 +31,5 @@ export default function AbstractLines(
         fill="#262626"
       />
     </svg>
-  );
+  )
 }

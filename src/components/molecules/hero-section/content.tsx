@@ -1,9 +1,9 @@
-import { ParentProps } from "solid-js";
+import { ParentProps } from 'solid-js'
 
 export default function HeroSectionContent(props: ParentProps) {
   return (
-    <div class="flex flex-col items-center text-center gap-5 max-w-72">
+    <div class="flex max-w-72 flex-col items-center gap-5 text-center">
       {props.children}
     </div>
-  );
+  )
 }

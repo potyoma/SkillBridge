@@ -1,4 +1,4 @@
-import { JSX } from "solid-js";
+import { JSX } from 'solid-js'
 
 export default function CheckIcon(props: JSX.SvgSVGAttributes<SVGSVGElement>) {
   return (
@@ -16,5 +16,5 @@ export default function CheckIcon(props: JSX.SvgSVGAttributes<SVGSVGElement>) {
         d="m4.5 12.75 6 6 9-13.5"
       />
     </svg>
-  );
+  )
 }

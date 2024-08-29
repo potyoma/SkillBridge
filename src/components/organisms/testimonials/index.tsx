@@ -1,7 +1,7 @@
-import Section from "~/components/molecules/section";
-import { testimonials } from "./consts";
-import Testimonial from "~/components/molecules/testimonial";
-import { For } from "solid-js";
+import Section from '~/components/molecules/section'
+import { testimonials } from './consts'
+import Testimonial from '~/components/molecules/testimonial'
+import { For } from 'solid-js'
 
 export default function Testimonials() {
   return (
@@ -12,7 +12,7 @@ export default function Testimonials() {
     >
       <ul class="flex flex-col gap-3">
         <For each={testimonials}>
-          {testimonial => (
+          {(testimonial) => (
             <li>
               <Testimonial testimonial={testimonial} />
             </li>
@@ -20,5 +20,5 @@ export default function Testimonials() {
         </For>
       </ul>
     </Section>
-  );
+  )
 }

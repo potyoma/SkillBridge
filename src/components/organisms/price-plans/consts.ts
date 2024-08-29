@@ -3,19 +3,19 @@ import {
   PricePlanFeature,
   PricePlanFeatures,
   RegularityType,
-} from "~/lib/types/price-plan";
+} from '~/lib/types/price-plan'
 
 export const pricePlans: PricePlan[] = [
   {
-    name: "Free Plan",
+    name: 'Free Plan',
     prices: {
       [RegularityType.monthly]: {
         amount: 0,
-        currency: "USD",
+        currency: 'USD',
       },
       [RegularityType.yearly]: {
         amount: 0,
-        currency: "USD",
+        currency: 'USD',
       },
     },
     features: {
@@ -29,15 +29,15 @@ export const pricePlans: PricePlan[] = [
     },
   },
   {
-    name: "Pro plan",
+    name: 'Pro plan',
     prices: {
       [RegularityType.monthly]: {
         amount: 79,
-        currency: "USD",
+        currency: 'USD',
       },
       [RegularityType.yearly]: {
         amount: 840,
-        currency: "USD",
+        currency: 'USD',
       },
     },
     features: {
@@ -50,4 +50,4 @@ export const pricePlans: PricePlan[] = [
       [PricePlanFeatures.earlyAccess]: true,
     },
   },
-];
+]

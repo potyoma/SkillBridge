@@ -1,6 +1,6 @@
-import { twMerge } from "tailwind-merge";
+import { twMerge } from 'tailwind-merge'
 
-type HeroVideoProps = { class?: string };
+type HeroVideoProps = { class?: string }
 
 export default function HeroVideo(props: HeroVideoProps) {
   return (
@@ -14,7 +14,7 @@ export default function HeroVideo(props: HeroVideoProps) {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen
-      class={twMerge("rounded-lg", props.class)}
+      class={twMerge('rounded-lg', props.class)}
     ></iframe>
-  );
+  )
 }

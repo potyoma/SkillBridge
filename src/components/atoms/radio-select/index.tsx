@@ -1,32 +1,32 @@
-import { createUniqueId, For, JSX } from "solid-js";
+import { createUniqueId, For, JSX } from 'solid-js'
 
 export type RadioSelectOption = {
-  value: string | number | string[] | undefined;
-  label: string;
-};
+  value: string | number | string[] | undefined
+  label: string
+}
 
 type RadioSelectProps = {
-  options: RadioSelectOption[];
-  selected?: RadioSelectOption;
-  onSelect?: (option: RadioSelectOption) => void;
-  name: string;
-};
+  options: RadioSelectOption[]
+  selected?: RadioSelectOption
+  onSelect?: (option: RadioSelectOption) => void
+  name: string
+}
 
 export default function RadioSelect(props: RadioSelectProps) {
   const handleChange = (option: RadioSelectOption) => {
-    props.onSelect?.(option);
-  };
+    props.onSelect?.(option)
+  }
 
   return (
-    <fieldset class="flex p-6 border border-white-95 rounded-lg bg-white">
+    <fieldset class="flex rounded-lg border border-white-95 bg-white p-6">
       <For each={props.options}>
-        {option => {
-          const id = createUniqueId();
+        {(option) => {
+          const id = createUniqueId()
 
           return (
             <div>
               <input
-                class="appearance-none peer"
+                class="peer appearance-none"
                 type="radio"
                 id={id}
                 name={props.name}
@@ -36,14 +36,14 @@ export default function RadioSelect(props: RadioSelectProps) {
               />
               <label
                 for={id}
-                class="py-3 px-6 rounded-lg transition-colors duration-300 ease-out peer-checked:bg-orange-50 peer-checked:text-white"
+                class="rounded-lg px-6 py-3 transition-colors duration-300 ease-out peer-checked:bg-orange-50 peer-checked:text-white"
               >
                 {option.label}
               </label>
             </div>
-          );
+          )
         }}
       </For>
     </fieldset>
-  );
+  )
 }

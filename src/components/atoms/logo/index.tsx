@@ -1,3 +1,3 @@
 export default function Logo() {
-  return <div class="bg-[url('/images/logo.png')] w-10 h-10" />;
+  return <div class="h-10 w-10 bg-[url('/images/logo.png')]" />
 }

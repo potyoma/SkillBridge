@@ -1,10 +1,10 @@
-import { ParentProps } from "solid-js";
-import ArrowLongRight from "~/assets/icons/arrow-long-right";
-import PrimaryButton from "~/components/atoms/primary-button";
+import { ParentProps } from 'solid-js'
+import ArrowLongRight from '~/assets/icons/arrow-long-right'
+import PrimaryButton from '~/components/atoms/primary-button'
 
 type BannerCtaProps = ParentProps & {
-  href: string;
-};
+  href: string
+}
 
 export default function BannerCta(props: BannerCtaProps) {
   return (
@@ -14,7 +14,7 @@ export default function BannerCta(props: BannerCtaProps) {
       class="flex gap-3 px-2 text-sm"
     >
       {props.children}
-      <ArrowLongRight class="w-5 h-5" />
+      <ArrowLongRight class="h-5 w-5" />
     </PrimaryButton>
-  );
+  )
 }

@@ -1,9 +1,9 @@
-import { ParentProps } from "solid-js";
-import Header from "../organisms/header";
-import Footer from "../organisms/footer";
-import { Title } from "@solidjs/meta";
+import { ParentProps } from 'solid-js'
+import Header from '../organisms/header'
+import Footer from '../organisms/footer'
+import { Title } from '@solidjs/meta'
 
-type MainLayoutProps = ParentProps;
+type MainLayoutProps = ParentProps
 
 export default function MainLayout(props: MainLayoutProps) {
   return (
@@ -16,5 +16,5 @@ export default function MainLayout(props: MainLayoutProps) {
         <Footer />
       </div>
     </>
-  );
+  )
 }

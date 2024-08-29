@@ -1,28 +1,28 @@
-import { BenefitModel } from "~/lib/types/benefits";
+import { BenefitModel } from '~/lib/types/benefits'
 
 export const benefits: BenefitModel[] = [
   {
-    heading: "Flexible Learning Schedule",
+    heading: 'Flexible Learning Schedule',
     description:
-      "Fit your coursework around your existing commitments and obligations.",
-    slug: "#",
+      'Fit your coursework around your existing commitments and obligations.',
+    slug: '#',
   },
   {
-    heading: "Expert Instruction",
+    heading: 'Expert Instruction',
     description:
-      "Learn from industry experts who have hands-on experience in design and development.",
-    slug: "#",
+      'Learn from industry experts who have hands-on experience in design and development.',
+    slug: '#',
   },
   {
-    heading: "Diverse Course Offerings",
+    heading: 'Diverse Course Offerings',
     description:
-      "Explore a wide range of design and development courses covering various topics.",
-    slug: "#",
+      'Explore a wide range of design and development courses covering various topics.',
+    slug: '#',
   },
   {
-    heading: "Updated Curriculum",
+    heading: 'Updated Curriculum',
     description:
-      "Access courses with up-to-date content reflecting the latest trends and industry practices.",
-    slug: "#",
+      'Access courses with up-to-date content reflecting the latest trends and industry practices.',
+    slug: '#',
   },
-];
+]
